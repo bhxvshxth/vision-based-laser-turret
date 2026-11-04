@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>vision based laser turret</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #000; }
+  body { display: flex; align-items: center; justify-content: center; }
+  canvas {
+    width: min(640px, 96vw);
+    aspect-ratio: 4 / 3;
+    border: 1px solid #1c1c1c;
+    cursor: crosshair;
+    touch-action: none;
+    display: block;
+  }
+  canvas.dragging { cursor: grabbing; }
+</style>
+</head>
+<body>
+<canvas id="cam" width="640" height="480"></canvas>
+<script src="tracker.js"></script>
+<script src="demo.js"></script>
+</body>
+</html>
